@@ -1,4 +1,4 @@
 hunse_tools
 ===========
 
-A library of simple Python functions
+Miscellaneous tools for Python
