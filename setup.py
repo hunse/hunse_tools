@@ -16,13 +16,16 @@ setup(
     version="0.1.0",
     author="Eric Hunsberger",
     author_email="ehunsber@uwaterloo.ca",
-    # packages=['hunse_tools'],
-    py_modules=['', 'numpy'],
+    packages=['hunse_tools'],
     scripts=[],
     url="https://github.com/hunse/hunse_tools",
-    license="LICENSE",
+    license="MIT",
     description="Miscellaneous tools for Python",
     long_description=open('README.md').read(),
-    requires=[],
-    # test_suite='hunse_tools.tests',
+    setup_requires=[
+        "numpy>=1.6",
+    ],
+    install_requires=[
+        "numpy>=1.6",
+    ],
 )
