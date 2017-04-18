@@ -3,13 +3,11 @@
 try:
     from setuptools import setup
 except ImportError:
-    try:
-        from ez_setup import use_setuptools
-        use_setuptools()
-        from setuptools import setup
-    except Exception, e:
-        print "Forget setuptools, trying distutils..."
-        from distutils.core import setup
+    from ez_setup import use_setuptools
+    use_setuptools()
+
+from setuptools import setup  # noqa: F811
+
 
 setup(
     name="hunse_tools",
