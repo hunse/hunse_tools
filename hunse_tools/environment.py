@@ -1,16 +1,15 @@
-
 import os
 
-################################################################################
-### Display
 
+# --- Display
 def has_display():
     return ('DISPLAY' in os.environ)
 
-################################################################################
-### iPython
 
+# --- iPython
 _is_ipython = None
+
+
 def is_ipython():
     global _is_ipython
     if _is_ipython is None:
