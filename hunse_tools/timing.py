@@ -1,14 +1,14 @@
-import time
+import timeit
 
 _timers = []
 
 
 def tic(name=None):
-    _timers.append((name, time.time()))
+    _timers.append((name, timeit.default_timer()))
 
 
 def toc(display=True):
-    t1 = time.time()
+    t1 = timeit.default_timer()
     name, t0 = _timers.pop()
     t = t1 - t0
 
