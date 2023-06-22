@@ -2,7 +2,6 @@ import numpy as np
 
 from hunse_tools.numpy import is_integer
 
-
 # def format_memory(memory_in_bytes):
 #     memory_types = ("B", "KB", "MB", "GB", "TB")
 #     memory = memory_in_bytes

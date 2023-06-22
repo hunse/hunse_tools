@@ -3,7 +3,7 @@ import os
 
 # --- Display
 def has_display():
-    return ('DISPLAY' in os.environ)
+    return "DISPLAY" in os.environ
 
 
 # --- iPython

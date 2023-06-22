@@ -1,4 +1,5 @@
 import numpy as np
+
 rng = np.random.RandomState(3)  # TODO: add rng fixture
 
 from hunse_tools.numbers import ifactor
