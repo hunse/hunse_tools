@@ -30,3 +30,8 @@ def squasher(x):
 
 def rms(x, **kwargs):
     return np.sqrt((x**2).mean(**kwargs))
+
+
+def is_integer(obj):
+    """Check if ``obj`` is an integer type."""
+    return isinstance(obj, (int, np.integer))
