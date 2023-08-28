@@ -18,6 +18,22 @@ def binomial(n, k):
     return result
 
 
+def factorial_ratio(num, den=()):
+    """Compute ratio of factorials.
+
+    prod(factorial(n) for n in num) / prod(factorial(d) for d in den)
+    """
+
+    m = max(max(num), max(den))
+
+    result = 1
+    for i in range(1, m + 1):
+        q = sum(1 for n in num if i <= n) - sum(1 for d in den if i <= d)
+        result *= i**q
+
+    return result
+
+
 def ifactor(x):
     """Determine the integer factors of x"""
     if x < 1:
